@@ -1,0 +1,169 @@
+/*************
+ MAIN 
+ *************/
+.actions{
+    max-width: 75%;
+    margin: auto;
+}
+
+/*************
+ CARD DEVICE
+ ************/
+.movistar .card-device{
+    border:none !important;
+}
+
+.card-device .desc{
+    width: 120px;
+    height: 120px;
+    margin-top: -75px;
+    margin-left: 65%;
+    padding-top: 30px;
+}
+
+.card-device .device{
+    position: absolute;
+    bottom: -30px;
+    left:30px;
+    height: 300px;
+}
+
+.card-device .btn-danger{
+    background-color: #79468a;
+    border: none;
+}
+
+.card-device h1{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.card-device p{
+    max-width: 90%;
+}
+
+.card-device .price{
+    color: #777;
+    font-weight: bolder;
+}
+
+.card-device .advise{
+    color:#777;
+    max-width: 70%;
+    font-size: 1.2em;
+}
+
+/*************
+footer
+**************/
+
+.movistar .text-dark{
+    color: #777 !important;
+}
+
+/*************
+plan
+**************/
+
+.plan .price{
+    color: #777;
+    font-size: 1.6em;
+}
+
+.plan{
+-webkit-box-shadow: -1px 3px 5px 0px rgba(179,179,179,1);
+-moz-box-shadow: -1px 3px 5px 0px rgba(179,179,179,1);
+box-shadow: -1px 3px 5px 0px rgba(179,179,179,1);
+}
+
+
+/*************
+BANNERS 
+**************/
+.banner-social .icons{
+    max-width: 500px;
+}
+
+.img-main{
+display: block;
+}
+
+.principal h1, .principal h2, .principal h3 {
+display: block !important;
+width: 100%;
+}
+.principal h2{
+    font-size: 1.5em;
+}
+
+
+/*************
+NAV 
+**************/
+nav{
+    -webkit-box-shadow: -1px 3px 5px 0px rgba(179,179,179,1);
+    -moz-box-shadow: -1px 3px 5px 0px rgba(179,179,179,1);
+    box-shadow: -1px 3px 5px 0px rgba(179,179,179,1);
+    }
+
+
+/*************
+GENERAL 
+**************/
+
+.offer{
+    text-decoration:line-through;
+}
+
+.light{
+    font-weight: lighter;
+}
+
+
+.bg-default{
+    background-color: #eee;
+}
+
+small{
+    font-size: 0.7em !important;
+}
+
+.rights img{
+height: 20px;
+}
+
+.subtitle{
+    font-size: 1.7em;
+}
+
+.movistar .bg-success{
+   background-color:  #7ac239 !important;
+}
+
+.movistar .btn-success{
+    background-color:  #7ac239;
+    border: none !important;
+ }
+
+ .movistar .text-success{
+    color:  #7ac239;
+ }
+
+ .movistar .bg-info{
+    background-color:  #4ea7db !important;
+ }
+
+ .movistar .btn-info{
+    background-color:  #4ea7db !important;
+    border: none !important;
+ }
+ 
+ .movistar .text-info{
+    color:  #4ea7db;
+ }
+
+ .movistar .bg-warning{
+    background-color:   #f0a840 !important;
+ }
+
+
