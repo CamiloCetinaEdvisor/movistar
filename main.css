@@ -1,6 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&display=swap');
+/*************
+GENERAL 
+**************/
+
+h1, h2, h3, h4, h5 , p{
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+.offer{
+    text-decoration:line-through;
+}
+
+.light{
+    font-weight: lighter;
+}
+
+
+.bg-default{
+    background-color: #eee;
+}
+
+small{
+    font-size: 0.7em !important;
+}
+
+.rights img{
+height: 20px;
+}
+
+.subtitle{
+    font-size: 1.7em;
+}
+
+.movistar .bg-success{
+   background-color:  #7ac239 !important;
+}
+
+.movistar .btn-success{
+    background-color:  #7ac239;
+    border: none !important;
+ }
+
+ .movistar .text-success{
+    color:  #7ac239;
+ }
+
+ .movistar .bg-info{
+    background-color:  #4ea7db !important;
+ }
+
+ .movistar .btn-info{
+    background-color:  #4ea7db !important;
+    border: none !important;
+ }
+ 
+ .movistar .text-info{
+    color:  #4ea7db;
+ }
+
+ .movistar .bg-warning{
+    background-color:   #f0a840 !important;
+ }
+
+
+.phone{
+    filter: invert(500%);
+    filter: brightness(300%);
+}
+
+.phone-content{
+    position: sticky;
+    top: 30%;
+    right:0px;
+    float: right;
+    z-index: 2;
+}
+
 /*************
  MAIN 
  *************/
+
+
 .actions{
     max-width: 75%;
     margin: auto;
@@ -104,66 +185,17 @@ nav{
     -webkit-box-shadow: -1px 3px 5px 0px rgba(179,179,179,1);
     -moz-box-shadow: -1px 3px 5px 0px rgba(179,179,179,1);
     box-shadow: -1px 3px 5px 0px rgba(179,179,179,1);
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 2;
     }
 
 
 /*************
-GENERAL 
+SLIDER
 **************/
 
-.offer{
-    text-decoration:line-through;
+.item{
+    height: 60vh;
 }
-
-.light{
-    font-weight: lighter;
-}
-
-
-.bg-default{
-    background-color: #eee;
-}
-
-small{
-    font-size: 0.7em !important;
-}
-
-.rights img{
-height: 20px;
-}
-
-.subtitle{
-    font-size: 1.7em;
-}
-
-.movistar .bg-success{
-   background-color:  #7ac239 !important;
-}
-
-.movistar .btn-success{
-    background-color:  #7ac239;
-    border: none !important;
- }
-
- .movistar .text-success{
-    color:  #7ac239;
- }
-
- .movistar .bg-info{
-    background-color:  #4ea7db !important;
- }
-
- .movistar .btn-info{
-    background-color:  #4ea7db !important;
-    border: none !important;
- }
- 
- .movistar .text-info{
-    color:  #4ea7db;
- }
-
- .movistar .bg-warning{
-    background-color:   #f0a840 !important;
- }
-
-

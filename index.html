@@ -8,11 +8,13 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 <body class="movistar">
     
     <!-- nav-bar -->
-    <nav class="d-flex justify-content-between p-4">
+    <nav class="justify-content-between p-4 d-none d-md-flex">
         <img class="pl-2" src="./img/Logo/Logo.png">
         <h4><small class="light">Compra aquí</small><span class="text-success pl-2 light">018000911008</span></h4>
     </nav>
@@ -29,20 +31,31 @@
                     <a class="btn btn-outline-dark btn-block p-4" >ingresa tu numero</a>
                 </div>
                 <div class="col-sm-6">
-                    <a class="btn btn-success btn-block p-4 text-white">Compra aquí</a>
+                    <a type="button" data-toggle="modal" data-target="#myModal" class="btn btn-success btn-block p-4 text-white">Compra aquí</a>
                 </div>
             </div>
             <div class="row pt-2 ">
-                <input type="checkbox" class="control-form pr-3" ><p class="pl-3">Autorización para el tratamiento de datos personales</p>
+                <label><input class="mr-2" type="checkbox" value="">Autorización para el tratamiento de datos personales</label>
             </div>
         </div>
     </main>
     <!-- banners -->
     <div class="banner-social" >
-        <img class="img-fluid img-main m-auto pt-5" src="./img/banners/mainbanner-Huawei_P_Smart-camiseta-desktop.png">
+        <div class="owl-carousel owl-theme mb-0">
+                <div class="item p-5">
+                    <img class="img-fluid img-main m-auto pt-5" src="./img/banners/mainbanner-Huawei_P_Smart-camiseta-desktop.png">
+                </div>
+                <div class="item p-5">
+                    <img class="img-fluid img-main m-auto pt-5" src="./img/banners/mainbanner-sin-equipo-desktop.png">
+                </div>
+                <div class="item p-5">
+                    <img class="img-fluid img-main m-auto pt-5" src="./img/banners/samsung-j7-camiseta-desktop.png">
+                </div>
+            </div>
+        
         <div class="bg-info p-5">
             <div class="container">
-                <h1 class="text-white text-center light">Difruta en tu plan recomendado 3.5 GB</h1>
+                <h1 class="text-white text-center light">Disfruta en tu plan recomendado 3.5 GB</h1>
 
                 <div class="m-auto d-flex justify-content-around icons pt-4" >
                     <img src="./img/SocialMedia/ico-face.png">
@@ -56,8 +69,11 @@
         </div>
     </div>
     <!-- services -->
+    <div class="phone-content bg-success p-3">
+    <a type="button" data-toggle="modal" data-target="#myModal"><img class="phone" src="./img/iconos/ico-phone-mobile.png" ></a>  
+    </div>
     <div class="container">
-        <h2 class="subtitle text-center text-dark p-5 light" >Te sugerimos el Plan 1.6 GB por $44.900</h1>
+        <h2 class="subtitle text-center text-dark p-5 light" >Te sugerimos el Plan 1.6 GB por $44.900</h1>  
         <div class="row">
             <div class="col-md-4">
                 <article class="plan card mt-5">
@@ -83,7 +99,7 @@
                         <img class="img-fluid p-3 m-auto" src="./img/iconos/ico-M_Play.png">
                         <hr>
                         <p class="price pt-2 pb-4 light">$127.900/mes</p>
-                        <a class="btn btn-block btn-success p-3 text-white" >Lo quiero</a>
+                        <atype="button" data-toggle="modal" data-target="#myModal" class="btn btn-block btn-success p-3 text-white" >Lo quiero</a>
                     </div>
                 </article>
             </div>
@@ -113,7 +129,7 @@
                                 <img class="img-fluid p-3 m-auto" src="./img/iconos/ico-M_Play.png">
                                 <hr>
                                 <p class="price pt-2 pb-4 light">$44.900/mes</p>
-                                <a class="btn btn-block btn-info p-3 text-white" >Lo quiero</a>
+                                <a type="button" data-toggle="modal" data-target="#myModal" class="btn btn-block btn-info p-3 text-white" >Lo quiero</a>
                             </div>
                         </article>
             </div>
@@ -138,12 +154,13 @@
                                 <img class="img-fluid p-3 m-auto" src="./img/iconos/ico-M_Play.png">
                                 <hr>
                                 <p class="price pt-2 pb-4 light">$65.900/mes</p>
-                                <a class="btn btn-block btn-success p-3 text-white" >Lo quiero</a>
+                                <a type="button" data-toggle="modal" data-target="#myModal" class="btn btn-block btn-success p-3 text-white" >Lo quiero</a>
                             </div>
                         </article>
             </div>
     </div>
     </div>
+    
     <!-- devices -->
     <div class="container">
         <h1 class="subtitle text-center text-dark p-5 light" >También te puede interesar</h1>
@@ -172,7 +189,7 @@
                               <h4 class="price">$65.900/mes</h4>
                           </div>
                           <div class="col-6">
-                              <a class="btn btn-block btn-success text-white " ><b>Lo quiero</b></a>
+                              <a type="button" data-toggle="modal" data-target="#myModal" class="btn btn-block btn-success text-white " ><b>Lo quiero</b></a>
                           </div>
                       </div>
                   </div>
@@ -202,7 +219,7 @@
                                         <h4 class="price">$65.900/mes</h4>
                                     </div>
                                     <div class="col-6">
-                                        <a class="btn btn-block btn-success text-white " ><b>Lo quiero</b></a>
+                                        <a type="button" data-toggle="modal" data-target="#myModal" class="btn btn-block btn-success text-white " ><b>Lo quiero</b></a>
                                     </div>
                                 </div>
                             </div>
@@ -235,7 +252,7 @@
                                   <h4 class="price">$65.900/mes</h4>
                               </div>
                               <div class="col-6">
-                                  <a class="btn btn-block btn-success text-white " ><b>Lo quiero</b></a>
+                                  <a type="button" data-toggle="modal" data-target="#myModal" class="btn btn-block btn-success text-white " ><b>Lo quiero</b></a>
                               </div>
                           </div>
                       </div>
@@ -265,7 +282,7 @@
                                             <h4 class="price">$65.900/mes</h4>
                                         </div>
                                         <div class="col-6">
-                                            <a class="btn btn-block btn-success text-white " ><b>Lo quiero</b></a>
+                                            <a type="button" data-toggle="modal" data-target="#myModal" class="btn btn-block btn-success text-white " ><b>Lo quiero</b></a>
                                         </div>
                                     </div>
                                 </div>
@@ -285,9 +302,63 @@
     
     </div>
 
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Datos de Contacto</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <form>
+                <div class="modal-body">
+            
+                    <input class="form-control mb-2" placeholder="teléfono" type="text" name="phone" >
+                    <input class="form-control mb-2" placeholder="email" type="email" name="email" >
+                    <input class="form-control mb-2" placeholder="Nombre" type="text" name="name" >
+                    <p class="pb-2">Horario de preferencia para ser contactado: </p>
+                    <select class="form-control" >
+                        <option value="1">entre 7am y 10pm</option>
+                        <option value="2">entre 10am y 3pm</option>
+                        <option value="3">entre 3pm y 5pm</option>
+
+                    </select>
+                    
+                    <div class="modal-footer">
+                            <button class="btn btn-info" type="submit">Enviar</button>
+                    </div>
+                    
+            
+                </div>
+            </form>
+
+        </div>
+    
+        </div>
+    </div>
+  
+
+    <!-- <button type="button" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
 </body>
 </html>
 <script src='main.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    items:1,
+    margin:30,
+    stagePadding:30,
+    smartSpeed:450
+})
+</script>
