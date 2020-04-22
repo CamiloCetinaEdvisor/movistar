@@ -77,6 +77,9 @@ height: 20px;
     z-index: 2;
 }
 
+.movistar .btn-outline-dark:hover {
+    color:white;
+}
 /*************
  MAIN 
  *************/
@@ -199,3 +202,25 @@ SLIDER
 .item{
     height: 60vh;
 }
+
+
+@media screen and (max-width: 720px) {
+    .item{
+        height: auto;
+    }
+    .phone-content {
+        position: fixed;
+        top: unset;
+        bottom: 10%;
+    }
+    .card-device .device {
+        position: relative;
+        bottom: 0px;
+        left: unset;
+        height: 300px;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+    }
+  }
+  
