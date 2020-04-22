@@ -21,7 +21,7 @@
     <!-- call-actions -->
     <main class="container">
         <div class="principal row text-center pt-5">   
-            <h1 class="text-center text-info animated bounce light" >Llevate un <b>Huawei P Smart LTE</b><br>por<b>sólo</b>$699.000<b>$599.000</b></b></h1>
+            <h1 class="text-center text-info animated bounceIn" >Llevate un <b>Huawei P Smart LTE</b><br>por<b>sólo</b>$699.000<b>$599.000</b></b></h1>
             <h2 class="light text-dark">lleva un descuento adicional exclusivo online Cali, Bucaramanga, Medellin y Bogotá</h2>
             <h3 class="light text-dark"><b>¡Redime tu cupón!</b></h3>
         </div> 
@@ -360,5 +360,28 @@ $('.owl-carousel').owlCarousel({
     margin:30,
     stagePadding:30,
     smartSpeed:450
-})
+});
+
+$(document).ready(function() { 
+
+        $("a").hover(function() { 
+            $( this ).addClass( "animated tada" );
+            setTimeout(
+                function() { 
+            $( "a" ).removeClass( "animated tada" );
+        }    
+            , 2000);
+        });
+
+        $(".card-device  img").hover(function() { 
+            $( this ).addClass( "animated flip" );
+            setTimeout(
+                function() { 
+            $( ".card-device img" ).removeClass( "animated flip" );
+        }    
+            , 4000);
+        });
+
+
+        });
 </script>
